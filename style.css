@@ -1,0 +1,14 @@
+body {
+   background-color: rgba(120, 8, 8, 0.53);
+} 
+
+.title {
+   text-align: center;
+   padding-top: 7%;
+   font-size: 100px;
+}
+
+.homeform{
+   text-align: center;
+   margin: 15%;
+}
