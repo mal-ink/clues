@@ -1,5 +1,10 @@
-const loggedInUser = localStorage.getItem('loggedInUser');
-const userDropdown = document.getElementById('user-dropdown');
-const loginLink = document.getElementById('login-link');
-const logoutBtn = document.getElementById('logout-button');
- 
+const loginButton = document.getElementById('login-button');
+const signupButton = document.getElementById('signup-button');
+
+document.getElementById('login-button').addEventListener('click', () => {
+  window.location.href = 'login.html';
+});
+
+document.getElementById('signup-button').addEventListener('click', () => {
+  window.location.href = 'signup.html';
+});
