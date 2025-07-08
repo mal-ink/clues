@@ -13,3 +13,47 @@ body {
    margin-right: 15%;
    margin-left: 15%;
 }
+
+.wrapper{
+  background-color:rgba(105, 8, 8, 0.358);
+  height: 75vh;
+  width: max(20%, 300px);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input:hover {
+  border: 2px solid #500d0da0;
+}
+
+div:has(input:focus) > label{
+  background-color: #6b1c18c7;
+}
+
+form button:hover {
+  background-color: rgb(255, 141, 132);
+  outline: none;
+}
+
+form button:focus {
+  background-color: rgb(255, 141, 132);
+  outline: none;
+}
+@media(max-width: 1100px){
+  .wrapper{
+    width:min(600px,100%);
+    border-radius: 0;
+  }
+}
+
+.incorrect label {
+  color: rgb(117, 101, 48);
+}
+
+.incorrect input {
+  border: 2px solid rgb(117, 101, 48);
+}
