@@ -18,7 +18,7 @@ function loadUsers() {
     return [];
   }
 } 
-
+   
 function saveUsers(users) {
   fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
 }
@@ -51,4 +51,4 @@ app.post('/login', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
-});
+}); 
